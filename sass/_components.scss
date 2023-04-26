@@ -10,7 +10,7 @@
     padding: 0.1rem 1rem;
 }
 
-$main-color: #0075ff;
+$main-color: #0052ff;
 
 .btn-main {
     @include btn-base();
@@ -48,17 +48,26 @@ $main-color: #0075ff;
 }
 
 .main-menu {
+    margin-bottom: 0;
     li {
-        font-size: 0.85rem;
+        margin-right: 0.45rem;
+        font-size: 0.95rem;
         list-style: none;
         display: inline;
+        a {
+            color: #000000;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }
 
 .icon-sm {
     i {
-        font-size: 0.85rem;
-        padding: 0.1rem 0.25rem;
+        font-size: 1.45rem;
+        padding: 0.6rem 0.85rem;
         border-radius: 50%;
         box-shadow: 0 0 10px #00000040;
         color: $main-color;
