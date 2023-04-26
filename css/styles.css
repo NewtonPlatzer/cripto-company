@@ -1,14 +1,14 @@
 .btn-main, .btn-main-s {
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
-  background-color: #0075ff;
+  background-color: #0052ff;
   color: #fff;
-  border: 1px solid #0075ff;
+  border: 1px solid #0052ff;
 }
 .btn-main:hover, .btn-main-s:hover {
   background-color: white;
-  color: #0075ff;
-  border: 1px solid #0075ff;
+  color: #0052ff;
+  border: 1px solid #0052ff;
 }
 .btn-main-s {
   font-size: 0.85rem;
@@ -31,18 +31,29 @@
   padding: 0.1rem 1rem;
 }
 
+.main-menu {
+  margin-bottom: 0;
+}
 .main-menu li {
-  font-size: 0.85rem;
+  margin-right: 0.45rem;
+  font-size: 0.95rem;
   list-style: none;
   display: inline;
 }
+.main-menu li a {
+  color: #000000;
+  text-decoration: none;
+}
+.main-menu li a:hover {
+  text-decoration: underline;
+}
 
 .icon-sm i {
-  font-size: 0.85rem;
-  padding: 0.1rem 0.25rem;
+  font-size: 1.45rem;
+  padding: 0.6rem 0.85rem;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2509803922);
-  color: #0075ff;
+  color: #0052ff;
 }
 
 .feature {
@@ -50,7 +61,7 @@
   flex-direction: column;
 }
 .feature .icon {
-  color: #0075ff;
+  color: #0052ff;
   font-size: 9rem;
   margin-bottom: -0.5rem;
   text-align: center;
@@ -66,7 +77,7 @@
 }
 .feature .cta {
   text-align: center;
-  color: #0075ff;
+  color: #0052ff;
   font-weight: 600;
   margin-top: 3rem;
 }
@@ -78,7 +89,7 @@
   justify-content: center;
 }
 .icon-desc .icon {
-  color: #0075ff;
+  color: #0052ff;
   font-size: 9rem;
   padding: 0;
 }
@@ -89,7 +100,341 @@
 }
 
 body {
-  margin-top: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo a img {
+  max-width: 7rem;
+}
+
+.sec-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 992px;
+  margin: auto;
+  padding: 3rem;
+}
+.sec-home .home-cta {
+  flex: 1;
+}
+.sec-home .home-cta .cta-text a {
+  text-decoration: none;
+  font-weight: 600;
+}
+.sec-home .home-cta .cta-text a:hover {
+  text-decoration: underline;
+}
+.sec-home .home-cta .cta-text a i {
+  font-weight: 600;
+}
+.sec-home .home-cta .home-title {
+  width: 20rem;
+  font-weight: 400;
+  font-size: 3.5rem;
+}
+.sec-home .home-cta .home-description {
+  font-weight: bold;
+  width: 26rem;
+  font-size: 1.2rem;
+}
+.sec-home .home-img img {
+  width: 35rem;
+  margin-right: rem;
+}
+
+.sec-call-to-action {
+  display: flex;
+  padding: 1rem;
+  padding-left: 5rem;
+  width: 100%;
+  background-color: rgb(12, 12, 12);
+}
+.sec-call-to-action .cta-text {
+  margin-left: 2rem;
+}
+.sec-call-to-action .cta-text h2 {
+  font-weight: normal;
+  color: white;
+  font-size: 2.8rem;
+}
+.sec-call-to-action .cta-text p {
+  font-size: 1.2rem;
+  width: 60%;
+  color: white;
+}
+.sec-call-to-action .cta-text button {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  border: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 56px;
+  background-color: #0065d8;
+  color: black;
+}
+.sec-call-to-action .cta-text button:hover {
+  background-color: #016be4;
+}
+.sec-call-to-action .cta-text button i {
+  font-weight: 700;
+  margin-left: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.products {
+  margin: 3rem 5rem;
+}
+.products .table-products {
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 20px;
+}
+.products .table-products th,
+.products .table-products td {
+  color: #414141;
+  font-weight: 400;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.products .table-products td img {
+  margin-right: 0.45rem;
+  width: 2rem;
+}
+.products .table-products .porcent {
+  color: rgb(1, 100, 34);
+}
+.products .table-products .btn-table {
+  border: none;
+  border-radius: 4px;
+  padding: 0.35rem 1rem;
+  background-color: rgb(12, 153, 59);
+  color: white;
+}
+.products .table-products .btn-table:hover {
+  background-color: rgb(12, 170, 65);
+}
+.products .products-cta2 {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: 2rem;
+}
+.products .products-cta2 .products-cta2-text h2 {
+  width: 50%;
+  font-weight: normal;
+}
+.products .products-cta2 .products-cta2-text p {
+  width: 55%;
+  font-size: 0.9rem;
+}
+.products .products-cta2 .product1,
+.products .products-cta2 .product2 {
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 1rem;
+  margin-bottom: 2rem;
+}
+.products .products-cta2 .product1 img,
+.products .products-cta2 .product2 img {
+  width: 3rem;
+  margin-right: 1rem;
+}
+.products .products-cta2 .product1 h3,
+.products .products-cta2 .product2 h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.products .products-cta2 .product1 a,
+.products .products-cta2 .product2 a {
+  text-align: right;
+  margin-left: 6rem;
+  color: rgb(12, 153, 59);
+}
+.products .products-cta2 .product2 {
+  margin-bottom: 2rem;
+}
+.products .products-cta2 .more {
+  padding-top: 1rem;
+  margin-left: 1rem;
+  color: #0052ff;
+  text-decoration: none;
+}
+
+.sec-features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 5rem;
+  margin-top: 5rem;
+}
+.sec-features .intro-features {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.sec-features .intro-features h3 {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+.sec-features .intro-features p {
+  color: #727272;
+}
+.sec-features .features {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.sec-features .features .text {
+  padding: 2rem 0;
+  max-width: 35%;
+}
+.sec-features .features .text .feature {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.sec-features .features .text .feature .description {
+  margin-left: 2rem;
+}
+.sec-features .features .text .feature .description .description-title {
+  font-size: 1.15rem;
+}
+.sec-features .features .text .feature .description .description-text {
+  font-size: 1rem;
+  color: #5f5f5f;
+}
+.sec-features .features .img img {
+  max-width: 42rem;
+}
+
+.sec-benefits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sec-benefits .intro-benefits {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.sec-benefits .intro-benefits h3 {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+.sec-benefits .intro-benefits p {
+  color: #727272;
+}
+.sec-benefits .benefits {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.sec-benefits .benefits .benefit {
+  text-align: center;
+  max-width: 20rem;
+}
+.sec-benefits .benefits .benefit i {
+  color: #0052ff;
+  font-size: 4.5rem;
+}
+.sec-benefits .benefits .benefit p {
+  margin-bottom: 4rem;
+  color: #4d4d4d;
+}
+.sec-benefits .benefits .benefit a {
+  font-size: 0.86rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.sec-kpis {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 2.5rem 2rem;
+  background-color: #0052ff;
+}
+.sec-kpis .kpi {
+  color: white;
+  text-align: center;
+}
+.sec-kpis .kpi h4 {
+  font-size: 3.5rem;
+  font-weight: normal;
+}
+
+.sec-onboarding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 6rem;
+}
+.sec-onboarding .intro-steps {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.sec-onboarding .intro-steps h3 {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+.sec-onboarding .intro-steps p {
+  color: #727272;
+}
+.sec-onboarding .steps {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+.sec-onboarding .steps .step i {
+  font-size: 3rem;
+  color: #0052ff;
+}
+
+.sec-footer-cta {
+  display: flex;
+  margin-top: 8rem;
+  padding-left: 5rem;
+  align-items: center;
+}
+.sec-footer-cta .cta-text h2 {
+  font-weight: normal;
+  color: black;
+}
+.sec-footer-cta .cta-text p {
+  font-size: 0.9rem;
+  color: black;
+}
+.sec-footer-cta .footer-img img {
+  width: 50rem;
+}
+
+.final-text {
+  padding: 0 5rem;
+  padding-bottom: 5rem;
+}
+.final-text p {
+  font-size: 0.8rem;
+  color: #4d4d4d;
 }
 
 /*# sourceMappingURL=styles.css.map */
