@@ -31,8 +31,9 @@
   padding: 0.1rem 1rem;
 }
 
-.nav {
+.nav, .navbar-main {
   display: flex;
+  padding: 0rem 2rem;
   justify-content: space-around;
   align-items: center;
   width: 100%;
@@ -40,20 +41,20 @@
   border-bottom: 1px solid #ddd;
   z-index: 1;
 }
-.nav .main-menu {
+.nav .main-menu, .navbar-main .main-menu {
   margin-bottom: 0;
 }
-.nav .main-menu li {
+.nav .main-menu li, .navbar-main .main-menu li {
   padding-right: 1rem;
   font-size: 0.95rem;
   list-style: none;
   display: inline;
 }
-.nav .main-menu li a {
+.nav .main-menu li a, .navbar-main .main-menu li a {
   color: #000000;
   text-decoration: none;
 }
-.nav .main-menu li a:hover {
+.nav .main-menu li a:hover, .navbar-main .main-menu li a:hover {
   padding-bottom: 0.5rem;
   border-bottom: 3px solid #0052ff;
 }
@@ -116,6 +117,12 @@ html {
 body {
   margin: 0;
   padding: 0;
+}
+
+.navbar-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo a img {
@@ -444,6 +451,40 @@ body {
 }
 
 @media (max-width: 768px) {
+  .sec-home {
+    margin-top: 4rem;
+    padding: 6rem 1rem;
+  }
+  .sec-home .home-cta .cta-text {
+    width: 100%;
+  }
+  .sec-home .home-cta .cta-text a {
+    text-decoration: none;
+  }
+  .sec-home .home-cta .cta-text h1 {
+    margin-top: 0.6rem;
+    width: 100%;
+    font-weight: 400;
+    font-size: 2rem;
+  }
+  .sec-home .home-cta .cta-text p {
+    width: 100%;
+    font-size: 0.9rem;
+    color: black;
+  }
+  .sec-home .home-cta .cta-text .subscribe {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .sec-home .home-cta .cta-text .subscribe input {
+    padding: 1rem;
+  }
+  .sec-home .home-cta .cta-text .subscribe button {
+    margin-top: 0.5rem;
+    padding: 1rem;
+    width: 100%;
+  }
   .sec-call-to-action {
     align-items: center;
     padding: 1rem;
@@ -479,7 +520,8 @@ body {
   .products .table-products td {
     padding: 1rem 0.5rem;
   }
-  .products .table-products .number, .products .table-products .btn-table {
+  .products .table-products .number,
+  .products .table-products .btn-table {
     display: none;
   }
   .products .products-cta2 {
@@ -491,7 +533,8 @@ body {
     width: 100%;
     margin-bottom: 1rem;
   }
-  .products .products-cta2 .products-cta2-text h2, .products .products-cta2 .products-cta2-text p {
+  .products .products-cta2 .products-cta2-text h2,
+  .products .products-cta2 .products-cta2-text p {
     width: 100%;
   }
   .products .products-cta2 .product1,
@@ -511,6 +554,106 @@ body {
   }
   .products .products-cta2 .product2 {
     margin-bottom: 1rem;
+  }
+  .sec-features {
+    margin: 1rem 1rem;
+  }
+  .sec-features .features {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .sec-features .features .text {
+    padding: 2rem 0;
+    max-width: 100%;
+  }
+  .sec-features .features .text .feature {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+  .sec-features .features .text .feature i {
+    font-size: 2rem;
+  }
+  .sec-features .features .text .feature .description {
+    margin-left: 0;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .sec-features .features .text .feature .description .description-title {
+    font-size: 1.15rem;
+  }
+  .sec-features .features .text .feature .description .description-text {
+    font-size: 1rem;
+    color: #5f5f5f;
+  }
+  .sec-features .features .img img {
+    width: 22rem;
+  }
+  .sec-benefits {
+    margin: 4rem 4rem;
+  }
+  .sec-benefits .benefits {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .sec-benefits .benefits .benefit {
+    text-align: center;
+    max-width: 20rem;
+  }
+  .sec-benefits .benefits .benefit i {
+    font-size: 3.5rem;
+  }
+  .sec-benefits .benefits .benefit p {
+    margin-bottom: 2rem;
+  }
+  .sec-benefits .benefits .benefit a {
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+  .sec-kpis {
+    flex-direction: column;
+  }
+  .sec-onboarding .intro-steps h3 {
+    font-size: 2.2rem;
+    color: black;
+  }
+  .sec-onboarding .intro-steps p {
+    color: #807c7c;
+  }
+  .sec-onboarding .steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  .sec-onboarding .steps .step i {
+    font-size: 3rem;
+    color: #0052ff;
+  }
+  .sec-footer-cta {
+    background-color: rgb(17, 51, 85);
+    height: 20rem;
+    padding-left: 0;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .sec-footer-cta .cta-text {
+    text-align: center;
+    padding: 1rem 3rem;
+  }
+  .sec-footer-cta .cta-text h2 {
+    font-weight: normal;
+    color: white;
+    margin-bottom: 1.6rem;
+  }
+  .sec-footer-cta .cta-text p {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 1.6rem;
+  }
+  .sec-footer-cta .footer-img img {
+    width: 50rem;
   }
 }
 
