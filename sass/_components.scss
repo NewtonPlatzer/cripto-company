@@ -47,18 +47,32 @@ $main-color: #0052ff;
     }
 }
 
-.main-menu {
-    margin-bottom: 0;
-    li {
-        margin-right: 0.45rem;
-        font-size: 0.95rem;
-        list-style: none;
-        display: inline;
-        a {
-            color: #000000;
-            text-decoration: none;
-            &:hover {
-                text-decoration: underline;
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    border-bottom: 1px solid #ddd;
+    z-index: 1;
+
+    .main-menu {
+
+        margin-bottom: 0;
+
+        li {
+            padding-right: 1rem;
+            font-size: 0.95rem;
+            list-style: none;
+            display: inline;
+
+            a {
+                color: #000000;
+                text-decoration: none;
+                &:hover {
+                    padding-bottom: 0.5rem;
+                    border-bottom: 3px solid $main-color;
+                }
             }
         }
     }
@@ -112,6 +126,7 @@ $main-color: #0052ff;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     .icon {
         color: $main-color;
         font-size: 9rem;
@@ -122,6 +137,6 @@ $main-color: #0052ff;
         margin-top: -2rem;
         font-size: 1.5rem;
         font-weight: 600;
-        
+
     }
 }

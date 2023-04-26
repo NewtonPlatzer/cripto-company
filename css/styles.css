@@ -31,21 +31,31 @@
   padding: 0.1rem 1rem;
 }
 
-.main-menu {
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  border-bottom: 1px solid #ddd;
+  z-index: 1;
+}
+.nav .main-menu {
   margin-bottom: 0;
 }
-.main-menu li {
-  margin-right: 0.45rem;
+.nav .main-menu li {
+  padding-right: 1rem;
   font-size: 0.95rem;
   list-style: none;
   display: inline;
 }
-.main-menu li a {
+.nav .main-menu li a {
   color: #000000;
   text-decoration: none;
 }
-.main-menu li a:hover {
-  text-decoration: underline;
+.nav .main-menu li a:hover {
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #0052ff;
 }
 
 .icon-sm i {
@@ -99,18 +109,13 @@
   font-weight: 600;
 }
 
+html {
+  min-width: 100vw;
+}
+
 body {
   margin: 0;
   padding: 0;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: 4rem;
-  border-bottom: 1px solid #ddd;
 }
 
 .logo a img {
@@ -129,9 +134,11 @@ body {
 .sec-home .home-cta {
   flex: 1;
 }
+.sec-home .home-cta .cta-text {
+  width: 30rem;
+}
 .sec-home .home-cta .cta-text a {
   text-decoration: none;
-  font-weight: 600;
 }
 .sec-home .home-cta .cta-text a:hover {
   text-decoration: underline;
@@ -145,13 +152,12 @@ body {
   font-size: 3.5rem;
 }
 .sec-home .home-cta .home-description {
-  font-weight: bold;
   width: 26rem;
   font-size: 1.2rem;
 }
 .sec-home .home-img img {
-  width: 35rem;
-  margin-right: rem;
+  width: 38rem;
+  margin-top: 4rem;
 }
 
 .sec-call-to-action {
@@ -435,6 +441,77 @@ body {
 .final-text p {
   font-size: 0.8rem;
   color: #4d4d4d;
+}
+
+@media (max-width: 768px) {
+  .sec-call-to-action {
+    align-items: center;
+    padding: 1rem;
+    padding-left: 0;
+  }
+  .sec-call-to-action .cta-img img {
+    width: 9rem;
+  }
+  .sec-call-to-action .cta-text h2 {
+    font-size: 1.7rem;
+    width: 100%;
+  }
+  .sec-call-to-action .cta-text p {
+    font-size: 0.8rem;
+    width: 100%;
+    color: white;
+  }
+  .sec-call-to-action .cta-text button {
+    width: 12rem;
+    padding: 0.2rem 1rem;
+    font-weight: 400;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  .products {
+    margin: 3rem 0rem;
+  }
+  .products .table-products th {
+    display: none;
+  }
+  .products .table-products th,
+  .products .table-products td {
+    padding: 1rem 0.5rem;
+  }
+  .products .table-products .number, .products .table-products .btn-table {
+    display: none;
+  }
+  .products .products-cta2 {
+    flex-direction: column;
+    margin: 2rem 2rem;
+  }
+  .products .products-cta2 .products-cta2-text {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .products .products-cta2 .products-cta2-text h2, .products .products-cta2 .products-cta2-text p {
+    width: 100%;
+  }
+  .products .products-cta2 .product1,
+  .products .products-cta2 .product2 {
+    border: 1px solid #e2e2e2;
+    margin: 0;
+    padding: 1rem 1rem;
+  }
+  .products .products-cta2 .product1 h3,
+  .products .products-cta2 .product2 h3 {
+    margin-bottom: 0;
+  }
+  .products .products-cta2 .product1 a,
+  .products .products-cta2 .product2 a {
+    font-size: 1rem;
+    margin-left: 1.5rem;
+  }
+  .products .products-cta2 .product2 {
+    margin-bottom: 1rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
