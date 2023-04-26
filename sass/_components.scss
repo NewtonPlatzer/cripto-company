@@ -47,8 +47,9 @@ $main-color: #0052ff;
     }
 }
 
-.nav {
+.nav, .navbar-main {
     display: flex;
+    padding: 0rem 2rem;
     justify-content: space-around;
     align-items: center;
     width: 100%;
