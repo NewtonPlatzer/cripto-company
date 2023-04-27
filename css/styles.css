@@ -451,8 +451,15 @@ body {
 }
 
 @media (max-width: 768px) {
+  .navbar-main .btn-sign {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    padding: 0.7rem 1rem;
+    background-color: black;
+    color: white;
+  }
   .sec-home {
-    margin-top: 4rem;
+    margin-top: 2rem;
     padding: 6rem 1rem;
   }
   .sec-home .home-cta .cta-text {
