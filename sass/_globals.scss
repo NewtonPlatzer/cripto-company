@@ -402,8 +402,17 @@ body {
 
 @media (max-width: 768px) {
 
+    .navbar-main {
+        .btn-sign {
+            @include components.btn-base();
+            padding: 0.7rem 1rem;
+            background-color: black;
+            color: white;
+        }
+    }
+
     .sec-home {
-        margin-top: 4rem;
+        margin-top: 2rem;
         padding: 6rem 1rem;
 
         .home-cta {
@@ -614,21 +623,24 @@ body {
             }
         }
     }
+
     .sec-kpis {
         flex-direction: column;
     }
+
     .sec-onboarding {
         // display: flex;
         // flex-direction: column;
         // align-items: center;
         // text-align: center;
         // margin-top: 6rem;
-    
+
         .intro-steps {
             h3 {
-               font-size: 2.2rem; 
-               color: black;
+                font-size: 2.2rem;
+                color: black;
             }
+
             p {
                 color: #807c7c;
             }
@@ -640,8 +652,8 @@ body {
             align-items: center;
             gap: 2.5rem;
 
-           
-    
+
+
             .step {
                 i {
                     font-size: 3rem;
@@ -657,26 +669,27 @@ body {
         padding-left: 0;
         align-items: center;
         margin-bottom: 2rem;
-        
+
         .cta-text {
             text-align: center;
             padding: 1rem 3rem;
+
             h2 {
                 font-weight: normal;
                 color: white;
                 margin-bottom: 1.6rem;
             }
-    
+
             p {
                 font-size: 1rem;
                 color: white;
                 margin-bottom: 1.6rem;
             }
         }
-    
+
         .footer-img img {
             width: 50rem;
         }
     }
-    
+
 }
